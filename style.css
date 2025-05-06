@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Tagesschrift", system-ui;
+}
+
+nav {
+    display: flex;
+    background-image: linear-gradient(to right, #36e800 40%, #fbff00 50%);
+    width: 100%;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+
+nav ul li {
+    padding: 15px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+nav input[type="text"] {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 2px 10px;
+    padding-top: 4px;
+    font-family: inherit;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+nav button[type="submit"] {
+    background: #8b8d00b8;
+    border: none;
+    color: #fff;
+    height: 38px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+nav button[type="submit"]:active {
+    background: #8b8d00;
+}
+
+nav button[type="submit"]:hover {
+    /* scale: 98%; */
+    transform: translateY(200px);
+    transition: all 1ms ease-in-out;
+}
+
+nav button[type="submit"] svg {
+    color:#fff;
+    width: 24px;
+    height: 24px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.join-us {
+    background: #36e800;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 8px;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: inherit;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+    margin-top: -30px;
+    z-index: -6;
+    background-image: linear-gradient(to left, #36e800 40%, #fbff00 50%);
+}
+
+.hero img {
+    width: 40pc;
+    height: 40pc;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
